@@ -28,7 +28,6 @@ class SampleTest {
 	        }
 	}
 
-
 	@Test
 	void test() {
 		driver.get("https://www.google.com");
