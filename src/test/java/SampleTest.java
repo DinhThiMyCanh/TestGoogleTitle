@@ -7,7 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 class SampleTest {
@@ -29,11 +31,19 @@ class SampleTest {
 	}
 
 	@Test
-	void test() {
+	void test1() {
 		driver.get("https://www.google.com");
         String title = driver.getTitle();
         System.out.println("Title is: " + title);
         assert title.contains("Google");
 	}
-
+	@Test
+	void test2() {
+		String url = "https://www.youtube.com/";
+		driver.get(url);
+		String title = driver.getTitle();
+        System.out.println("Title is: " + title);
+        assert title.contains("YouTube");
+	}
+	
 }
