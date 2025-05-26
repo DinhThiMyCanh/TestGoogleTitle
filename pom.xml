@@ -18,20 +18,39 @@
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
         </dependency>
-        <dependency>
-        	<groupId>CNTT44_Maven</groupId>
-        	<artifactId>DataDrivingTest</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        
+        
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.16</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.0.0</version>
+		</dependency>
   </dependencies>
-<repositories>
-    <repository>
-        <id>nexus-snapshots</id>
-        <url>https://your-nexus-repo/repository/snapshots/</url>
-        <releases><enabled>false</enabled></releases>
-        <snapshots><enabled>true</enabled></snapshots>
-    </repository>
-</repositories>
+
     <build>
         <plugins>
             <!-- Maven Surefire Plugin để chạy test -->
